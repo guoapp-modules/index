@@ -42,6 +42,7 @@ def entry_for(repo: str, tag: str, files: dict[str, bytes]) -> dict:
         "version": manifest["version"],
         "description": manifest.get("description", ""),
         "api": manifest["api"],
+        "adult": manifest["adult"],
         "repo": repo,
         "tag": tag,
         "sha256": {name: hashlib.sha256(data).hexdigest() for name, data in files.items()},
