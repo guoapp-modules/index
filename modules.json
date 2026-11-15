@@ -1,0 +1,17 @@
+{
+  "repos": [
+    "guoapp-modules/beabox",
+    "guoapp-modules/dsd",
+    "guoapp-modules/guipian",
+    "guoapp-modules/hanxiaoquan",
+    "guoapp-modules/heitao",
+    "guoapp-modules/hongguo",
+    "guoapp-modules/huangguo-video",
+    "guoapp-modules/huangguoai",
+    "guoapp-modules/huangju",
+    "guoapp-modules/jinguoduanju",
+    "guoapp-modules/missav",
+    "guoapp-modules/sorani",
+    "guoapp-modules/yeguo"
+  ]
+}

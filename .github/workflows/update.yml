@@ -1,0 +1,48 @@
+name: 更新索引
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [modules.json]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: index
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: guoapp-modules/.github
+          path: .module-ci
+      - name: 组织内模块
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 scripts/update_index.py --checker .module-ci/scripts --trusted guoapp-modules --scope trusted --summary "$RUNNER_TEMP/trusted.md"
+          if ! git diff --quiet index.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore: 更新组织内模块" -m "$(cat "$RUNNER_TEMP/trusted.md")" index.json
+            git push
+          fi
+      - name: 社区模块
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_index.py --checker .module-ci/scripts --trusted guoapp-modules --scope community --summary "$RUNNER_TEMP/community.md"
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          add-paths: index.json
+          branch: community-updates
+          title: 社区模块更新
+          body-path: ${{ runner.temp }}/community.md
+          commit-message: "chore: 更新社区模块"
