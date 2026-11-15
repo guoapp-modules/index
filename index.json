@@ -67,19 +67,6 @@
       }
     },
     {
-      "id": "hongguo",
-      "name": "红果",
-      "version": "1.0.0",
-      "description": "短剧 · 漫剧 · AI 剧 · 听书",
-      "api": 1,
-      "repo": "guoapp-modules/hongguo",
-      "tag": "v1.0.0",
-      "sha256": {
-        "manifest.json": "8830459b1b69a42231f187e846a41baf7bc70ce3ad778ff4b201baf2859c85c4",
-        "main.js": "e8b6a7d08c567d5cd4920b99c72585730ade72d1e5d8313865589155c7481bdc"
-      }
-    },
-    {
       "id": "huangguo-video",
       "name": "黄果视频",
       "version": "1.0.0",
