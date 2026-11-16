@@ -44,6 +44,20 @@
       }
     },
     {
+      "id": "hanime1",
+      "name": "Hanime1",
+      "version": "1.0.0",
+      "description": "分类视频 · 在线搜索 · 多清晰度",
+      "api": 1,
+      "adult": true,
+      "repo": "guoapp-modules/hanime1",
+      "tag": "v1.0.0",
+      "sha256": {
+        "manifest.json": "4b1110d70c0a6174a832166d1ccff818a666e68b2c3e21607781bd05ed38f341",
+        "main.js": "f14bd4bffcfbc24cf259de527e7fb2e0da3aaaa86f75ae3eed0de5575a1a1dc1"
+      }
+    },
+    {
       "id": "hanxiaoquan",
       "name": "韩小圈",
       "version": "1.0.1",
