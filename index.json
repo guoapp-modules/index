@@ -46,14 +46,14 @@
     {
       "id": "hanime1",
       "name": "Hanime1",
-      "version": "1.0.0",
-      "description": "分类视频 · 在线搜索 · 多清晰度",
+      "version": "1.0.1",
+      "description": "分类视频 · 在线搜索 · 多清晰度 · 日本 IP 无法访问",
       "api": 1,
       "adult": true,
       "repo": "guoapp-modules/hanime1",
-      "tag": "v1.0.0",
+      "tag": "v1.0.1",
       "sha256": {
-        "manifest.json": "4b1110d70c0a6174a832166d1ccff818a666e68b2c3e21607781bd05ed38f341",
+        "manifest.json": "d90efd95958760d8ab9d935a0f249e49f72625c8a475d5d584fa3a7028a54829",
         "main.js": "f14bd4bffcfbc24cf259de527e7fb2e0da3aaaa86f75ae3eed0de5575a1a1dc1"
       }
     },
