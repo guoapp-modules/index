@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 已上架模块的问题
+    url: https://github.com/orgs/guoapp-modules/repositories
+    about: 请到对应的模块仓库提 issue
+  - name: 应用本身的问题
+    url: https://github.com/Xanerix/guoapp/issues
+    about: 与站源无关的问题请到 guoapp 仓库提

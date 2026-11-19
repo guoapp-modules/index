@@ -1,0 +1,38 @@
+name: 申请上架
+description: 把自己写好的模块上架到应用内的模块商店
+title: "申请上架 "
+labels: [上架申请]
+body:
+  - type: markdown
+    attributes:
+      value: 提交前请先读 [上架说明](https://github.com/guoapp-modules/index#上架)，确认模块满足其中的要求。
+  - type: input
+    id: repository
+    attributes:
+      label: 模块仓库
+      placeholder: https://github.com/<你的账号>/<模块标识>
+    validations:
+      required: true
+  - type: input
+    id: site
+    attributes:
+      label: 站点名称与地址
+    validations:
+      required: true
+  - type: checkboxes
+    id: requirements
+    attributes:
+      label: 确认
+      options:
+        - label: 仓库公开，仓库名与模块标识相同，已用 template 的 CI 发布 Release
+          required: true
+        - label: 以 GPL-3.0 许可发布，根目录保留 template 自带的 LICENSE
+          required: true
+        - label: 代码未压缩、未混淆，只请求清单 hosts 里的域名
+          required: true
+        - label: 不收集或上传与站源功能无关的用户数据，不下载执行远程代码
+          required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充说明

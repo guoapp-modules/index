@@ -1,0 +1,19 @@
+name: 请求新站源
+description: 希望有人为某个站点写模块
+title: "请求站源 "
+labels: [站源请求]
+body:
+  - type: markdown
+    attributes:
+      value: 站源由社区自愿编写，请求不保证会有人接手。已上架模块的问题请到对应的模块仓库提。
+  - type: input
+    id: site
+    attributes:
+      label: 站点名称与地址
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充说明
+      description: 想要的分类、站点是否需要登录等
