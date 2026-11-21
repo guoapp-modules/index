@@ -114,6 +114,34 @@
       }
     },
     {
+      "id": "huangdou",
+      "name": "黄豆",
+      "version": "1.0.0",
+      "description": "精选短剧",
+      "api": 1,
+      "adult": true,
+      "repo": "guoapp-modules/huangdou",
+      "tag": "v1.0.0",
+      "sha256": {
+        "manifest.json": "d58c2a7f69b764ebfef265cdd3693a5fd96b261c3938ad6c040d233bd27605d1",
+        "main.js": "c1c0aa9d54e1825acfd4411b58e634d58e131a1f0a7266df6d52fce7324aac26"
+      }
+    },
+    {
+      "id": "huangguo-old",
+      "name": "黄果旧版",
+      "version": "1.0.0",
+      "description": "旧 API 剧库",
+      "api": 1,
+      "adult": true,
+      "repo": "guoapp-modules/huangguo-old",
+      "tag": "v1.0.0",
+      "sha256": {
+        "manifest.json": "4453792710e2a8d661de20cd6cf869ed31daba993b594e7e66784bc95b6c75ca",
+        "main.js": "7cb1e3431c6dcb2371627b761ae1de4da87478f2d6cc0cf86098c77d4a1d94f0"
+      }
+    },
+    {
       "id": "huangguo-video",
       "name": "黄果视频",
       "version": "1.0.1",
